@@ -1,0 +1,221 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  
+}
+body {
+    font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    margin: 0;
+
+}
+p {
+    font-weight: 20;
+    font-style: normal;
+    
+}
+header {
+    
+    background-color: rgb(4, 78, 78);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    
+}
+header a {
+    color: aliceblue;
+}
+header a:hover {
+    color:black;
+    background: transparent;
+    background-color: lightskyblue;
+
+}
+a {
+    text-decoration: none;
+    align-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+#logo {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: azure;
+}
+#menu li {
+    padding: 10px;
+}
+#social-links a {
+    padding: 10px;
+    margin: 2.5px;
+}
+#main {
+    display: flex;
+    
+}
+aside {
+    flex: 0 0 18vw;
+    background-color: rgba(125, 233, 200, 0.322);
+    padding: 10px;
+    margin: 20px;
+    max-height: 100%;
+
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+aside ul a {
+     color:  rgb(4, 78, 78 );;
+     padding: 10px;
+     display: block;
+     border-bottom: 1.5px solid  rgb(4, 78, 78 ); ;
+}
+aside ul a:hover {
+    color: aliceblue;
+    background:  rgb(78, 190, 190);
+}
+aside img {
+    width: 100%;
+}
+.main-heading h1 {
+     margin-top: 50px;
+     margin-left: 40px;
+     margin-right: 50px;
+     margin-bottom: 15px;
+     font-size: 40px;
+     color: rgb(49, 14, 48);
+}
+.main-heading p {
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+}
+.main-heading h2 {
+    margin-left: 20px;
+    
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.service-box{
+    border: 0px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+    flex-basis:32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+.service-box h3{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+}
+.service-box img{
+    width: 100%;
+}
+.service-box img:hover{
+    transform: width 2s linear 1s;
+    transition: transform 1s;
+    transition-property: 350px 300px ;
+    transition-timing-function: linear;
+    transform-style: preserve-3d ;
+}
+.card {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-next {
+    background-color: rgb(164, 219, 241);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 10px;
+}
+footer {
+    
+    background-color: rgb(4, 78, 78 );
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+    
+}
+footer span {
+
+    font-size: small;
+}
+.call-to-action a{
+    background: gray;
+    color: white;
+    border: 2px solid transparent;
+    padding: 8px 13px;
+     display: block;
+    
+}
+.call-to-action a:hover{
+    background: rgb(31, 153, 161);
+    border: 2px solid gray;
+    color:  black;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+
+@media screen and (max-width:850px){
+    aside{
+        flex: 0 0 30vw;
+    }
+    .service-box{
+        flex-basis:50%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    header{
+        flex-direction: column;
+
+    }
+    #logo{
+        order: -1;
+    }
+    #main{
+        flex-direction: column;
+    }
+    article{
+        order: -1;
+        padding: 10px;
+    }
+    .service-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+    }
+}
